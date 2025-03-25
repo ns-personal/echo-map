@@ -5,9 +5,9 @@ FROM node:20-alpine
 WORKDIR /app
 
 # Copy package files
-COPY package*.json ./
+COPY package.json ./
 
-# Install dependencies
+# Install TypeScript globally and install dependencies
 RUN npm install
 
 # Copy source code
